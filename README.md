@@ -1,7 +1,7 @@
 BASIC AUTH LUYA MODULE
 ====
 
-Adds the typical htaccess auth dialog before each request, except of the admin module is this is protected by user and password. This module is made as angular does have problems with basic htaccess authentifications.
+Adds the typical htaccess auth dialog before each request. This module is made as angular does have problems with basic htaccess authentifications in the administration area.
 
 Installation
 ----
