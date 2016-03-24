@@ -1,6 +1,6 @@
 {
     "name" : "luyadev/luya-module-basicauth",
-    "description" : "LUYA basic auth module to replace htaccess base auth",
+    "description" : "LUYA Module to replace the htaccess base auth as it does not work in angular context",
     "type" : "project",
     "keywords" : ["php", "yii2", "luya", "basicauth", "htaccess", "auth"],
     "license": "MIT",
@@ -16,5 +16,5 @@
         "psr-4" : {
             "basicauth\\" : "src/"
         }
-    },
+    }
 }
