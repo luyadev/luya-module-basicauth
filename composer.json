@@ -1,0 +1,20 @@
+{
+    "name" : "luyadev/luya-module-basicauth",
+    "description" : "LUYA basic auth module to replace htaccess base auth",
+    "type" : "project",
+    "keywords" : ["php", "yii2", "luya", "basicauth", "htaccess", "auth"],
+    "license": "MIT",
+    "homepage" : "http://luya.io",
+    "authors" : [
+        {
+            "name" : "Basil",
+            "email" : "git@nadar.io",
+            "homepage" : "https://github.com/nadar"
+        }
+    ],
+    "autoload" : {
+        "psr-4" : {
+            "basicauth\\" : "src/"
+        }
+    },
+}
