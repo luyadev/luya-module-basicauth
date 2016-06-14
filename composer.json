@@ -1,6 +1,6 @@
 {
     "name" : "luyadev/luya-module-basicauth",
-    "description" : "LUYA Module to replace the htaccess base auth as it does not work in angular context",
+    "description" : "Adds the typical htaccess auth dialog before each request. This module is made as angular does have problems with basic htaccess authentifications in the administration area.",
     "type" : "project",
     "keywords" : ["php", "yii2", "luya", "basicauth", "htaccess", "auth", "luya-module"],
     "license": "MIT",
