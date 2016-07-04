@@ -27,7 +27,7 @@ as this module takes care each before every request you have to bootstrap this m
 
 
 ```php
-'boostrap' => [
+'bootstrap' => [
     'basicauth',
 ],
 ```
