@@ -9,7 +9,7 @@ Installation
 composer require the luya basic auth module
 
 ```sh
-composer require luyadev/luya-module-basicauth
+composer require luyadev/luya-module-basicauth:^1.0@dev
 ```
 
 add the module to your config
