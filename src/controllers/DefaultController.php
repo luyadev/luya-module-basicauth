@@ -1,6 +1,6 @@
 <?php
 
-namespace basicauth\controllers;
+namespace luya\basicauth\controllers;
 
 use Yii;
 use luya\web\Controller;

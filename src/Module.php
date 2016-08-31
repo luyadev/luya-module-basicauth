@@ -1,6 +1,6 @@
 <?php
 
-namespace basicauth;
+namespace luya\basicauth;
 
 use Yii;
 use yii\base\BootstrapInterface;

@@ -17,7 +17,7 @@ add the module to your config
 ```php
 'modules' => [
     'basicauth' => [
-        'class' => 'basicauth\Module',
+        'class' => 'luya\basicauth\Module',
         'password' => '<DEFINE_THE_PASSWORD_HERE>',
     ]
 ],
