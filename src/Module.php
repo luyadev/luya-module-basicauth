@@ -6,6 +6,7 @@ use Yii;
 use yii\base\BootstrapInterface;
 use yii\base\Application;
 use luya\Exception;
+use luya\base\AdminModuleInterface;
 
 class Module extends \luya\base\Module implements BootstrapInterface
 {
@@ -26,14 +27,14 @@ class Module extends \luya\base\Module implements BootstrapInterface
             if (!$event->sender->request->isConsoleRequest) {
                 if (
                     $event->sender->controller->module instanceof \luya\base\Module &&
-                    $event->sender->controller->module->isAdmin === false &&
+                    !$event->sender->controller->module instanceof AdminModuleInterface &&
                     $event->sender->controller->module->id !== $this->id) {
-                    if (!$event->sender->session->get('basicAuthSuccess', false)) {
-                        $event->isValid = false;
-                        return $event->sender->response->redirect(['/basicauth/default/index']);
-                    } else {
-                        Yii::info('User has been authentifacted trough luya module basic app', __METHOD__);
-                    }
+                        if (!$event->sender->session->get('basicAuthSuccess', false)) {
+                            $event->isValid = false;
+                            return $event->sender->response->redirect(['/basicauth/default/index']);
+                        } else {
+                            Yii::info('User has been authentifacted trough luya module basic app', __METHOD__);
+                        }
                 }
             }
         });
