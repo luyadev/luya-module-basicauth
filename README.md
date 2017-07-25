@@ -32,4 +32,4 @@ as this module takes care each before every request you have to bootstrap this m
 ],
 ```
 
-Now each request of your luya instance requres the entered password from your configuration files.
+Now each request of your luya instance requires the entered password from your configuration files.
