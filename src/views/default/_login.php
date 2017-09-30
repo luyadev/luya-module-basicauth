@@ -8,7 +8,7 @@
     		<p>Please enter a valid password to access this website:</p>
     
             <form method="post">
-            	<input type="password" name="authPassword" style="padding:4px; width:200px;" /> <input type="submit" value="Login" style="padding:4px;" />
+            	<input type="password" name="authPassword" style="padding:4px; width:200px;" autofocus /> <input type="submit" value="Login" style="padding:4px;" />
             </form>	
         
             <?php if ($error): ?>
