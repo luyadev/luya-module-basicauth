@@ -7,7 +7,7 @@
 
 Adds the typical htaccess auth dialog before each request. This module is made as angular does have problems with basic htaccess authentifications in the administration area.
 
-## Installation & Usage
+## Installation & Usage
 
 Add the `luyadev/luya-module-basicauth` package to your composer config:
 
