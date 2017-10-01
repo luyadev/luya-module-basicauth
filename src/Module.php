@@ -33,7 +33,7 @@ class Module extends \luya\base\Module implements BootstrapInterface
                             $event->isValid = false;
                             return $event->sender->response->redirect(['/basicauth/default/index']);
                         } else {
-                            Yii::info('User has been authentifacted trough luya module basic app', __METHOD__);
+                            Yii::info('User has been authenticated trough luya module basic auth.', __METHOD__);
                         }
                 }
             }
