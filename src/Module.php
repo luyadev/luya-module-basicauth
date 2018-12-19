@@ -16,6 +16,10 @@ use luya\base\AdminModuleInterface;
  */
 class Module extends \luya\base\Module implements BootstrapInterface
 {
+    /**
+     * @var string Contains the session name
+     * @since 1.0.1
+     */
     const BASIC_AUTH_SESSION_NAME = 'basicAuthSuccess';
 
     /**

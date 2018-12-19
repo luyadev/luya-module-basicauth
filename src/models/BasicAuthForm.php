@@ -6,7 +6,10 @@ use yii\base\Model;
 use luya\basicauth\Module;
 
 /**
- * Undocumented class
+ * Basic Auth Form Model.
+ * 
+ * @author Basil Suter <basil@nadar.io>
+ * @since 1.0.1
  */
 class BasicAuthForm extends Model
 {
