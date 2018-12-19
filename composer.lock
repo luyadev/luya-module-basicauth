@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "df181c632829057003cb4a5099af5f1d",
+    "content-hash": "e852d2d614d54ddf327cc8bba15f1adc",
     "packages": [],
     "packages-dev": [
         {
@@ -500,16 +500,16 @@
         },
         {
             "name": "unglue/client",
-            "version": "1.0.0-beta",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unglue-workflow/client.git",
-                "reference": "b8e353ce2bde66fdce1f261d98bcb8b77dee0874"
+                "reference": "327a0f42810788c32205f3ef0b3f165a236c40f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unglue-workflow/client/zipball/b8e353ce2bde66fdce1f261d98bcb8b77dee0874",
-                "reference": "b8e353ce2bde66fdce1f261d98bcb8b77dee0874",
+                "url": "https://api.github.com/repos/unglue-workflow/client/zipball/327a0f42810788c32205f3ef0b3f165a236c40f9",
+                "reference": "327a0f42810788c32205f3ef0b3f165a236c40f9",
                 "shasum": ""
             },
             "require": {
@@ -543,7 +543,7 @@
                 }
             ],
             "description": "The client binary which sends the data to the server and creates the output from the API response.",
-            "time": "2018-12-15T08:08:52+00:00"
+            "time": "2018-12-19T11:39:46+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -703,7 +703,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "unglue/client": 10
+        "unglue/client": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

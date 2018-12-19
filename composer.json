@@ -18,7 +18,7 @@
         }
     },
     "require-dev": {
-        "unglue/client" : "1.0.0-beta"
+        "unglue/client" : "dev-master"
     },
     "extra": {
         "branch-alias": {

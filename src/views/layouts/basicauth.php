@@ -17,7 +17,9 @@ BasicAuthAsset::register($this);
 </head>
 <body>
 <?php $this->beginBody() ?>
-    <?= $content ?>
+    <div class="container">
+        <?= $content ?>
+    </div>
 <?php $this->endBody() ?>
 </body>
 </html>
