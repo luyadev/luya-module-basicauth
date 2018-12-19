@@ -6,6 +6,7 @@ use Yii;
 use luya\web\Controller;
 use luya\basicauth\Module;
 use luya\basicauth\models\BasicAuthForm;
+use yii\filters\HttpCache;
 
 /**
  * Basic Auth Controller.
@@ -18,6 +19,22 @@ use luya\basicauth\models\BasicAuthForm;
 class DefaultController extends Controller
 {
     public $layout = 'basicauth';
+
+    /**
+     * {@inheritDoc}
+     */
+    public function behaviors()
+    {
+        return [
+            'httpCache' => [
+                'class' => HttpCache::class,
+                'cacheControlHeader' => 'no-store, no-cache',
+                'lastModified' => function ($action, $params) {
+                    return time();
+                },
+            ],
+        ];
+    }
 
     /**
      * Handle form input.
