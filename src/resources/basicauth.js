@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){$("body").toggleClass("nojs js"),$(".basicauth-password").on("blur keyup change",function(){$(this).next(".basicauth-label").toggleClass("js-filled",0<$(this).val().length)})}),$(window).on("load",function(){$(".basicauth").addClass("js-basicauth-ready")});

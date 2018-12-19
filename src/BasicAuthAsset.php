@@ -15,4 +15,12 @@ class BasicAuthAsset extends \luya\web\Asset
     public $css = [
         "basicauth.css",
     ];
+
+    public $js = [
+        "basicauth.js",
+    ];
+
+    public $depends = [
+        'yii\web\JqueryAsset',
+    ];
 }

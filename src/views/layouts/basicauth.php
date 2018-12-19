@@ -15,7 +15,7 @@ BasicAuthAsset::register($this);
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
 </head>
-<body>
+<body class="nojs">
 <?php $this->beginBody() ?>
     <div class="container">
         <?= $content ?>
