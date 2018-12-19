@@ -17,6 +17,9 @@
             "luya\\basicauth\\" : "src/"
         }
     },
+    "require-dev": {
+        "unglue/client" : "1.0.0-beta"
+    },
     "extra": {
         "branch-alias": {
             "dev-master": "1.0.x-dev"

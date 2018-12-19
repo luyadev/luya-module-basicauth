@@ -4,23 +4,37 @@ namespace luya\basicauth\controllers;
 
 use Yii;
 use luya\web\Controller;
+use luya\basicauth\Module;
+use luya\basicauth\models\BasicAuthForm;
 
+/**
+ * Basic Auth Controller.
+ * 
+ * Handling model input, write session and redirect.
+ * 
+ * @author Basil Suter <basil@nadar.io>
+ * @since 1.0.0
+ */
 class DefaultController extends Controller
 {
-    public $enableCsrfValidation = false;
-    
+    public $layout = 'basicauth';
+
+    /**
+     * Handle form input.
+     *
+     * @return string|
+     */
     public function actionIndex()
     {
-        $authPassword = Yii::$app->request->post('authPassword', false);
-        $error = false;
-        if (!empty($authPassword)) {
-            if ($authPassword === $this->module->password) {
-                Yii::$app->session->set('basicAuthSuccess', true);
-                return $this->goHome();
-            } else {
-                $error = true;
-            }
+        $model = new BasicAuthForm();
+        $model->password = $this->module->password;
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            Yii::$app->session->set(Module::BASIC_AUTH_SESSION_NAME, true);
+            return $this->goHome();
         }
-        return $this->renderPartial('_login', ['error' => $error]);
+        
+        return $this->render('index', [
+            'model' => $model,
+        ]);
     }
 }
