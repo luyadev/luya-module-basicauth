@@ -9,6 +9,14 @@ $logo-height: $logo-width / 1.111111111;
     url('fonts/roboto/regular.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/roboto/light.woff2') format('woff2'),
+    url('fonts/roboto/light.woff') format('woff');
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
