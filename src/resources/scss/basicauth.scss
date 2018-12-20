@@ -33,6 +33,7 @@ html, body {
     display: flex;
     height: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .basicauth {
@@ -183,7 +184,7 @@ html, body {
 
 .basicauth-info {
     bottom: 0;
-    display: block;
+    display: inline-block;
     left: 0;
     opacity: 1;
     padding: 25px;
@@ -192,11 +193,13 @@ html, body {
     width: 100%;
 
     @media (min-width: 576px) {
-        padding: 25px;
         text-align: left;
     }
-    @media screen and (max-height: 400px) {
-        display: none;
+    @media screen and (max-height: 650px) {
+        position: relative;
+        left: auto;
+        width: 100%;
+        text-align: center;
     }
 }
 
