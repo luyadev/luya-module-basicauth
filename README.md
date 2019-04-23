@@ -12,7 +12,7 @@ Adds the typical htaccess auth dialog before each request. This module is made a
 Add the `luyadev/luya-module-basicauth` package to your composer config:
 
 ```sh
-composer require luyadev/luya-module-basicauth:~1.0.0
+composer require luyadev/luya-module-basicauth
 ```
 
 Add the module to your configuration in the modules section.
