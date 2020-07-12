@@ -10,6 +10,11 @@
             "name" : "Basil",
             "email" : "git@nadar.io",
             "homepage" : "https://github.com/nadar"
+        },
+        {
+            "name" : "Mikhail Chemezov",
+            "email" : "michlenanosoft@gmail.com",
+            "homepage" : "https://github.com/chemezov"
         }
     ],
     "autoload" : {

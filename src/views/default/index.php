@@ -18,7 +18,8 @@ $this->title = Module::t('index_title');
             'template' => '{input}{label}{hint}{error}',
             'labelOptions' => [ 'class' => 'basicauth-label' ]
         ])->passwordInput([
-            'class' => 'basicauth-password'
+            'class' => 'basicauth-password',
+            'autofocus' => true,
         ]); ?>
         <div class="basicauth-buttons">
             <?= Html::submitButton(Module::t('index_form_submit_label'), ['class' => 'basicauth-submit']); ?>
