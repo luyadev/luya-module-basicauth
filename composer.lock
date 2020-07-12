@@ -434,16 +434,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.0.6",
+            "version": "v6.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c"
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8190d73eb5def11a43cfb020b7f36db65330698c",
-                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
+                "reference": "c2796cb1cb99d7717290b48c4e6f32cb6c60b7b3",
                 "shasum": ""
             },
             "require": {
@@ -452,13 +452,9 @@
                 "php": ">=5.5.0"
             },
             "require-dev": {
-                "doctrine/annotations": "1.2.*",
+                "doctrine/annotations": "^1.2",
                 "friendsofphp/php-cs-fixer": "^2.2",
-                "phpdocumentor/phpdocumentor": "2.*",
-                "phpunit/phpunit": "^4.8 || ^5.7",
-                "zendframework/zend-eventmanager": "3.0.*",
-                "zendframework/zend-i18n": "2.7.3",
-                "zendframework/zend-serializer": "2.7.*"
+                "phpunit/phpunit": "^4.8 || ^5.7"
             },
             "suggest": {
                 "ext-mbstring": "Needed to send email in multibyte encoding charset",
@@ -476,16 +472,16 @@
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "LGPL-2.1"
+                "LGPL-2.1-only"
             ],
             "authors": [
                 {
-                    "name": "Jim Jagielski",
-                    "email": "jimjag@gmail.com"
-                },
-                {
                     "name": "Marcus Bointon",
                     "email": "phpmailer@synchromedia.co.uk"
+                },
+                {
+                    "name": "Jim Jagielski",
+                    "email": "jimjag@gmail.com"
                 },
                 {
                     "name": "Andy Prevost",
@@ -496,7 +492,13 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2018-11-16T00:41:32+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/synchro",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-05-27T12:24:03+00:00"
         },
         {
             "name": "unglue/client",
@@ -504,19 +506,20 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unglue-workflow/client.git",
-                "reference": "327a0f42810788c32205f3ef0b3f165a236c40f9"
+                "reference": "08db7e966b260096949655ea8f0ce71509f46269"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unglue-workflow/client/zipball/327a0f42810788c32205f3ef0b3f165a236c40f9",
-                "reference": "327a0f42810788c32205f3ef0b3f165a236c40f9",
+                "url": "https://api.github.com/repos/unglue-workflow/client/zipball/08db7e966b260096949655ea8f0ce71509f46269",
+                "reference": "08db7e966b260096949655ea8f0ce71509f46269",
                 "shasum": ""
             },
             "require": {
-                "luyadev/luya-core": "~1.0.0"
+                "luyadev/luya-core": "^1.0"
             },
             "require-dev": {
-                "luyadev/luya-testsuite": "~1.0"
+                "luyadev/luya-testsuite": "^1.0",
+                "macfja/phar-builder": "^0.2.8"
             },
             "bin": [
                 "src/bin/unglue"
@@ -525,6 +528,18 @@
             "extra": {
                 "luya": {
                     "symlink": false
+                },
+                "phar-builder": {
+                    "compression": "none",
+                    "name": "unglue.phar",
+                    "output-dir": "./",
+                    "entry-point": "./src/index.php",
+                    "include": [
+                        "src"
+                    ],
+                    "include-dev": false,
+                    "shebang": true,
+                    "skip-shebang": true
                 }
             },
             "autoload": {
@@ -543,7 +558,7 @@
                 }
             ],
             "description": "The client binary which sends the data to the server and creates the output from the API response.",
-            "time": "2018-12-19T11:39:46+00:00"
+            "time": "2020-05-28T07:38:33+00:00"
         },
         {
             "name": "yiisoft/yii2",
@@ -708,5 +723,6 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }
