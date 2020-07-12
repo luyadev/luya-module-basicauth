@@ -17,8 +17,14 @@
             "luya\\basicauth\\" : "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "luya\\basicauth\\tests\\" : "tests/"
+        }
+    },
     "require-dev": {
-        "unglue/client" : "dev-master"
+        "unglue/client" : "^1.0",
+        "luyadev/luya-testsuite": "^1.0"
     },
     "extra": {
         "branch-alias": {
