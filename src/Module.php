@@ -22,6 +22,10 @@ class Module extends \luya\base\Module implements BootstrapInterface
      */
     const BASIC_AUTH_SESSION_NAME = 'basicAuthSuccess';
 
+    /**
+     * @var string Name of session key that contains redirect url after successful authentication.
+     * @since 1.1.0
+     */
     const BASIC_AUTH_REDIRECT_URL_SESSION_KEY = 'basicAuthRedirect';
 
     /**
