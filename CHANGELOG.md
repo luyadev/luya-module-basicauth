@@ -3,7 +3,7 @@
 All notable changes to this project will be documented in this file. This project adheres to [Semantic Versioning](http://semver.org/).
 In order to read more about upgrading and BC breaks have a look at the [UPGRADE Document](UPGRADE.md).
 
-## 1.1.0 (in development)
+## 1.1.0 (13. July 2020)
 
 + [#9](https://github.com/luyadev/luya-module-basicauth/pull/9) Added redirect to target url after authentication.
 + [#8](https://github.com/luyadev/luya-module-basicauth/issues/8) Added autofocus to password field.
