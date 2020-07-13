@@ -6,7 +6,7 @@ In order to read more about upgrading and BC breaks have a look at the [UPGRADE 
 ## 1.1.0 (in development)
 
 + [#9](https://github.com/luyadev/luya-module-basicauth/pull/9) Added redirect to target url after authentication.
-+ [#9](https://github.com/luyadev/luya-module-basicauth/pull/9) Added autofocus to password field.
++ [#8](https://github.com/luyadev/luya-module-basicauth/issues/8) Added autofocus to password field.
 + [#9](https://github.com/luyadev/luya-module-basicauth/pull/9) Added ru translation.
 
 ## 1.0.1.1 (20. December 2018)
