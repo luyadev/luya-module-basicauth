@@ -1,9 +1,10 @@
 # BASIC AUTH LUYA MODULE
 
 [![LUYA](https://img.shields.io/badge/Powered%20by-LUYA-brightgreen.svg)](https://luya.io)
+![Tests](https://github.com/luyadev/luya-module-basicauth/workflows/Tests/badge.svg)
 [![Total Downloads](https://poser.pugx.org/luyadev/luya-module-basicauth/downloads)](https://packagist.org/packages/luyadev/luya-module-basicauth)
 [![Latest Stable Version](https://poser.pugx.org/luyadev/luya-module-basicauth/v/stable)](https://packagist.org/packages/luyadev/luya-module-basicauth)
-[![Join the chat at https://gitter.im/luyadev/luya](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/luyadev/luya)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/0431f013a2b0dff94265/test_coverage)](https://codeclimate.com/github/luyadev/luya-module-basicauth/test_coverage)
 
 Adds the typical htaccess auth dialog before each request. This module is made as angular does have problems with basic htaccess authentifications in the administration area.
 
