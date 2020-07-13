@@ -22,12 +22,8 @@ class DefaultControllerTest extends WebApplicationTestCase
         ];
     }
 
-    /**
-     * @runInSeparateProcess
-     */
     public function testController()
     {
-        $ctrl = new DefaultController('default', $this->app->getModule('basicauth'));
-        $this->assertNotEmpty($ctrl->actionIndex());
+        $this->assertEmpty($this->app->getModule('basicauth')->bootstrap($this->app));
     }
 }
