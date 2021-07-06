@@ -29,11 +29,17 @@
     },
     "require-dev": {
         "unglue/client" : "^1.0",
-        "luyadev/luya-testsuite": "^1.0"
+        "luyadev/luya-testsuite": "^2.0"
     },
-    "extra": {
-        "branch-alias": {
-            "dev-master": "1.0.x-dev"
+    "config": {
+        "fxp-asset": {
+            "enabled": false
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }
