@@ -20,11 +20,12 @@ Add the module to your configuration in the modules section.
 
 ```php
 'modules' => [
+    //...
     'basicauth' => [
         'class' => 'luya\basicauth\Module',
         'password' => '<DEFINE_THE_PASSWORD_HERE>',
     ]
-],
+]
 ```
 
 As the module checks the authentication status on before each request, you have to bootstrap the module inside the bootstrap section of your config:
